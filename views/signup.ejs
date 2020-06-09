@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/journal/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/form.css">
+
+
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <img src="<%= foto %>" alt="">
+        <form id="signupForm" class="form-container" action="" method="POST">
+           
+                <label class="form-label" for="name">Name:</label>
+                <input class="form-input" type="text" name="name" id="name" required />
+            
+                <div>
+                <label for="ign">Riot Id:</label>
+                <input type="text" name="ign" id="ign" required style="width:70%" /><input type="text" style="width:20%" name="ign" id="unique" required />
+</div>
+            <button type="submit" value="signup" id="signup"  >Signup</button>
+
+        </form>
+    </div>
+</body>
+
+</html>

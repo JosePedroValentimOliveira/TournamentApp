@@ -1,0 +1,22 @@
+button{
+margin: 5px;
+transition: .3s background-color ease;
+width: 15%;
+border-radius: 10px;
+    
+}
+img{width: 100%;border-radius: 10px;
+}
+button:hover{
+    background-color:black;
+}
+
+#buttons{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+body{
+    text-align: center;
+}

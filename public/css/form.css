@@ -1,0 +1,64 @@
+.container {
+    max-width: 500px;
+    margin: 10rem auto;
+    border: 2px solid black;
+    padding: 2rem;
+    border-radius: 5px;
+    background-color: white;
+
+
+
+}
+
+.form-container label {
+    display: block;
+    padding: 1rem 0 .25rem;
+    font-size: 14px;
+  
+
+}
+
+.form-container input {
+    display: block;
+    width: 100%;
+    border: 2px solid #2980B9;
+    padding: .5rem;
+    font-size: 18px;
+    border-radius: 5px;
+
+}
+
+.form-container {
+    margin: 0 auto;
+}
+
+#signup {
+    border: 0;
+    background: #343050;
+    width: 100%;
+    padding: .5rem;
+    color: white;
+    margin: 1rem 0;
+    width: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s background ease;
+
+
+}
+
+#signup:hover {
+    background: #3498DB;
+}
+
+img {
+    width: 400px;
+}
+
+
+body{
+    background-image: url("../images/background1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
