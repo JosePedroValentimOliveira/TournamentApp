@@ -1,10 +1,11 @@
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
-const db = require('./config/keys').MongoURI;
+const db = require('./config/keys.js').MongoURI;
 const expressLayouts = require('express-ejs-layouts');
 const flash = require('connect-flash');
 const session = require('express-session');
+
 
 
 
