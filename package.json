@@ -1,5 +1,5 @@
 {
-  "name": "SignUp",
+  "name": "signup",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -13,10 +13,10 @@
     "express-session": "^1.17.1",
     "firebase-admin": "^8.12.1",
     "mongoose": "^5.9.18",
-    "node-fetch": "^2.6.0",
-    "nodemon": "^2.0.4"
+    "node-fetch": "^2.6.0"
+   
   },
-  "devDependencies": {},
+  "devDependencies": { "nodemon": "^2.0.4"},
   "scripts": {
     "start": "node server.js",
     "devStart": "nodemon server.js"
