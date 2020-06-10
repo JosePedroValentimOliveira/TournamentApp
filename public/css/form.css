@@ -32,7 +32,7 @@
     margin: 0 auto;
 }
 
-#signup {
+button {
     border: 0;
     background: #343050;
     width: 100%;
@@ -47,7 +47,7 @@
 
 }
 
-#signup:hover {
+button:hover {
     background: #3498DB;
 }
 
@@ -61,4 +61,10 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
+}
+#riotId{
+    display: flex
+}
+#ign{
+    margin-right: 5px;
 }

@@ -1,21 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SignUp Dawn's Fireflies</title>
-   
-    <link rel="stylesheet" href="./css/buttons.css">
-    <script src="./js/buttons.js" defer></script>
-   
-</head>
-<body>
+<%- contentFor('title')%>
+<title>SignUp Dawn's Fireflies</title>
+<%- contentFor('script')%>
+<script src="./js/buttons.js"></script>
+<%-contentFor('css')%>
+<link rel="stylesheet" href="../css/buttons.css">
 
-    <h1>Choose a game to sign up for</h1>
-    <div id="buttons">
-        
-    </div>
-    
-   
-</body>
-</html>
+<%- contentFor('body')%>
+<h1>Choose a game to sign up for</h1>
+
+<%- include('./partials/messages.ejs'); %>
+<div id="buttons">
+
+</div>
