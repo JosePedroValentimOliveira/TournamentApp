@@ -12,7 +12,7 @@ games.forEach(game => {
     })
 
 
-    router.post(`/${link}`,(req,res)=>{
+    router.post(`/${link}`,async(req,res)=>{
         ''
         const {name,ign,unique,game}= req.body;
        
@@ -29,7 +29,7 @@ games.forEach(game => {
             }
             else{
                 const newPlayer = new Player({name:name,ign:`${ign} ${unique}`,game:game});
-                newPlayer.save()
+                await newPlayer.save()
                 .then((player)=>{
                     req.flash('success_msg', `${player.ign} is now registered for ${game}`)
                     res.redirect('/');
