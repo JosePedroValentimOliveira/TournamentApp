@@ -1,18 +1,24 @@
 <%-contentFor('title')%>
-<title><%=title%></title>
+
 <%-contentFor('css')%>
 
 
 <%-contentFor('script')%>
-<script> let playerList = <%-playerList-%>; </script>
+<script> let players = <%-players-%>; </script>
 <script src="../js/displayList.js"></script>
 
 
 <%-contentFor('body')%>
-<div id="list">
 
-
+<div class="container">
+<table id="table">
+    <tr>
+        <th>Name</th>
+        <th>IGN</th>
+    </tr>
+    
+</table>
 </div>
 
 <%-contentFor('meta')%>
-<meta http-equiv="refresh" content="30"/> 
+<meta http-equiv="refresh" content="" />

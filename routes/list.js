@@ -2,24 +2,21 @@ const express = require("express");
 const router = express.Router();
 const games = require('../public/json/games.json');
 const Player = require('../models/User');
+const { json } = require("express");
 
 
-games.forEach(game=>{
+games.forEach(game => {
     let link = game.name.split(" ").join("");
-    Player.find({game:link},(err, players)=>{
-        let playerMap = [];
-    
-        players.forEach(player=>{
-            playerMap.push(player.ign);
-        })
-        router.get(`/${link}`,(req,res)=>{
-        
-            res.render('list', {foto:`../images/${game.short}_Logo.png`,title:game.name,playerList: JSON.stringify(playerMap)});
-        })   
-    })
 
-    
+    router.get(`/${link}`, (req, res) => {
+        Player.find({game:link}).then(players=>
+            res.render('list',{players:JSON.stringify(players)}));
+
+       
+    })
 })
 
-module.exports = router;
 
+
+
+module.exports = router;

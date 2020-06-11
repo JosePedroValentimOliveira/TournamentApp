@@ -1,19 +1,16 @@
 const express = require('express');
 const app = express();
-const mongoose = require('mongoose');
-const db = require('./config/keys.js').MongoURI;
+
+
 const expressLayouts = require('express-ejs-layouts');
 const flash = require('connect-flash');
 const session = require('express-session');
 
+require('./config/db')
 
 
+app.use(express.json());
 
-
-
-mongoose.connect(db,{useNewUrlParser : true,useUnifiedTopology:true})
-.then(()=>console.log('mongoDB Connected'))
-.catch((err)=>console.log(err));
 
 
 

@@ -1,8 +1,12 @@
-let div = document.getElementById("list");
-let ul = document.createElement('ul');
-playerList.forEach(player => {
-    let li = document.createElement('li');
-    li.textContent = player;
-    ul.appendChild(li);
+let table = document.getElementById('table');
+
+players.forEach(player => {
+    let tr = document.createElement("tr");
+    let td1 = document.createElement('td');
+    let td2 = document.createElement('td');
+    td1.textContent = player.name;
+    td2.textContent = player.ign;
+    tr.appendChild(td1);
+    tr.appendChild(td2);
+    table.appendChild(tr);
 });
-div.appendChild(ul);
