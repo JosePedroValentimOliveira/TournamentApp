@@ -1,16 +1,18 @@
 <%-contentFor('title')%>
 
 <%-contentFor('css')%>
-
+<link rel="stylesheet" href="../css/table.css">
 
 <%-contentFor('script')%>
 <script> let players = <%-players-%>; </script>
 <script src="../js/displayList.js"></script>
+<script src="../js/pairing.js"></script>
+
 
 
 <%-contentFor('body')%>
 
-<div class="container">
+<div id="tableContainer" class="container">
 <table id="table">
     <tr>
         <th>Name</th>
@@ -19,6 +21,17 @@
     
 </table>
 </div>
+
+<br><br>
+<br>
+<br>
+<br>
+
+
+
+
+
+<div id="pairings"></div>
 
 <%-contentFor('meta')%>
 <meta http-equiv="refresh" content="" />

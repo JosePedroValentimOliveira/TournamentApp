@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const games = require('../public/json/games.json');
 const Player = require('../models/User');
-const { json } = require("express");
+
 
 
 games.forEach(game => {
