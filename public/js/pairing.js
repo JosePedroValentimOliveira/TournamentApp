@@ -19,8 +19,9 @@ let makePairing = () => {
     console.log(pairs);
 }
 
-let rounds = ((players.length /2) - 0.5) * 2;
+
 makePairing();
+let rounds = players.length - 1;
 let roundStart = (roundnr) => {
     let roundMatchups = [];
     if (pairs.length != 0) {
