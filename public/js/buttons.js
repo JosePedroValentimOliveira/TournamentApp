@@ -12,7 +12,7 @@ fetch("../json/games.json").then((resp) => {
         img.src = `./images/${game.short}_Logo.png`;
         let link = game.name.split(" ").join("");
         button.onclick = ()=>{ window.location.href = `/signup/${link}`;};
-        if(game.short == "LoR" || game.short == "Val"){
+        if(game.short == "Val"){
             button.disabled = true;
             img.style.opacity = "0.5";
         }

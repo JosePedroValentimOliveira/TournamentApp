@@ -12,7 +12,6 @@ games.forEach(game => {
         Player.find({game:link}).then(players=>
             res.render('list',{players:JSON.stringify(players)}));
 
-       
     })
 })
 

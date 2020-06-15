@@ -27,7 +27,7 @@ let roundStart = (roundnr) => {
     if (pairs.length != 0) {
         let aanwezig;
         let verwijderen = [];
-        for (let index = 0; index < pairs.length; index++) { //gaat 6 keer itereren
+        for (let index = 0; index < pairs.length; index++) { 
             aanwezig = false;
             roundMatchups.forEach(match => {
                 if(pairs[index][0] === match[0] || pairs[index][0] === match[1]){
