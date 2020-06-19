@@ -1,19 +1,28 @@
 const express = require("express");
 const router = express.Router();
-const games = require('../public/json/games.json');
 const Player = require('../models/User');
+const { ensureAuthenticated } = require('../config/auth');
 
 
 
-games.forEach(game => {
-    let link = game.name.split(" ").join("");
-
-    router.get(`/${link}`, (req, res) => {
-        Player.find({game:link}).then(players=>
-            res.render('list',{players:JSON.stringify(players)}));
+    router.get(`/dashboard`, ensureAuthenticated, async (req, res) => {
+        let userInfo;
+        Player.findById({_id : req.user.id},(err,succes)=>{
+            if(err){
+                console.log(err);
+            }
+            else{
+                userInfo = req.user;
+            }
+        })
+        
+        
+        Player.find().then(players=>
+            
+            res.render('dashboard',{players:JSON.stringify(players)}));
 
     })
-})
+
 
 
 

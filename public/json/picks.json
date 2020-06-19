@@ -1,0 +1,60 @@
+[
+    {
+        "name": "Hamza",
+        "picks": [
+            "Zyra",
+            "Pyke",
+            "Taliyah"
+        ]
+    },
+    {
+        "name": "John",
+        "picks": [
+            "Tahm Kench",
+            "Syndra",
+            "Anivia"
+        ]
+    },
+    {
+        "name": "Zeca",
+        "picks": [
+            "Neeko",
+            "Syndra",
+            "Bard"
+        ]
+    }
+    ,
+    {
+        "name": "Emily",
+        "picks": [
+            "Lux",
+            "Karma",
+            "Ashe"
+        ]
+    }
+    ,
+    {
+        "name": "Chris",
+        "picks": [
+            "Zyra",
+            "Karma",
+            "Morgana"
+        ]
+    },
+    {
+        "name": "Tanya",
+        "picks": [
+            "Ashe",
+            "Lulu",
+            "Senna"
+        ]
+    },
+    {
+        "name": "Kenny",
+        "picks": [
+            "Zilean",
+            "Anivia",
+            "Orianna"
+        ]
+    }
+]

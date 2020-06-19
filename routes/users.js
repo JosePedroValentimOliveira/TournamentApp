@@ -19,7 +19,7 @@ router.post('/register', (req, res) => {
     const { username,name ,email, password, password2} = req.body;
 
     let errors = [];
-
+    let usernamebool;
     //check required fields
 
     if (!username ||!name || !email || !password || !password2) errors.push({ msg: 'Fill in all information' });
@@ -38,9 +38,23 @@ router.post('/register', (req, res) => {
     })
     else {
 
-        Admin.findOne({ email: email })
+        
+
+        Admin.findOne({username:username}).then((user)=>{
+            if(user){
+                usernamebool = true;
+            }
+        })
+        Admin.findOne({ email: email})
             .then((user) => {
-                if (user) {
+
+                if(usernamebool){
+                    errors.push({ msg: "Username is already in use" })
+                    res.render('register', {
+                        errors, username,name, email, password, password2
+                    })
+                }
+                else if (user) {
                     errors.push({ msg: "Email is already in use" })
                     res.render('register', {
                         errors, username,name, email, password, password2

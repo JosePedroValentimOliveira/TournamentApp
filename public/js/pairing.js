@@ -1,5 +1,3 @@
-
-
 let pairings = document.getElementById('pairings');
 let pairs = [];
 let makePairing = () => {

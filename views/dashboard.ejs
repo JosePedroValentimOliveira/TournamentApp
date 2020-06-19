@@ -1,0 +1,19 @@
+<%- contentFor('title')%>
+<title>Dashboard</title>
+<%- contentFor('script')%>
+<script>let players = <%-players-%>;</script>
+
+<script src="../js/dashboard.js"></script>
+
+<%-contentFor('css')%>
+
+
+<%- contentFor('body')%>
+<h1>Dashboard</h1>
+
+<div id="listContainer" style="display: flex;">
+    
+</div>
+<button>Add tournament</button>
+
+<%-contentFor('meta')%> 

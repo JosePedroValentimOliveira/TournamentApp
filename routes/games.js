@@ -15,8 +15,7 @@ games.forEach(game => {
     router.post(`/${link}`,(req,res)=>{
         
         const {name,ign,unique,game}= req.body;
-       
-        let errors = [];
+     
 
         Player.findOne({ign:`${ign} ${unique}`,game:game})
         .then((player)=>{
