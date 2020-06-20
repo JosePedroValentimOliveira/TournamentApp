@@ -45,10 +45,9 @@ app.use((req,res,next)=>{
 
 
 //routes
-app.use('/signup',require('./routes/games'));
-app.use('/',require('./routes/list'));
-app.use('/',require('./routes/users'));
 
+app.use('/',require('./routes/users'));
+app.use('/tournament',require('./routes/tournament'));
 app.get('/',(req,res)=>{
     res.render('index');
 });

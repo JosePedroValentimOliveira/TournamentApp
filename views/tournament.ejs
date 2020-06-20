@@ -1,0 +1,49 @@
+<%-contentFor('title')%>
+<title>New Tournament</title>
+<%-contentFor('css')%>
+
+
+<%-contentFor('script')%>
+
+
+
+<%-contentFor('body')%>
+
+<form action="" method="post" >
+  <h3>Basic Info</h3>
+  <label for="name">Tournament Name</label>
+  <input type="text" name="name" id="name" required>
+
+  <label for="description">Description</label>
+  <input type="text" name="description" id="description" >
+  
+  <h1>Game Info</h1>
+  <label for="game">Game</label>
+  <input type="text" name="game" id="game" required>
+
+  
+  <input type="radio" name="type" id="single" checked>
+  <label for="single">Single stage tournament</label>
+  
+  <input type="radio" name="type" id="double">
+  <label for="double">Two Stage Tournament</label>
+<label for="format">Format</label>
+<select name="format" id="format">
+  <option value="singleElem">Single Elemination</option>
+  <option value="doubleElem">Double Elemination</option>
+  <option value="swiss">Swiss</option>
+  <option value="roundRobin">Round Robin</option>
+</select>
+
+
+
+
+  <h3>Registration</h3>
+  <label for="maxPlayers">Maximum players</label>
+  <input type="text" name="maxPlayers" id="maxPlayers">
+  <label for="startDate"></label>
+  <input type="date" name="startDate" id="startDate">
+  <button type="submit">Save Tournament</button>
+</form>
+
+<%-contentFor('meta')%>

@@ -56,5 +56,30 @@
             "Anivia",
             "Orianna"
         ]
+    },
+    {
+        "name": "Connor",
+        "picks": [
+            "Zyra",
+            "Alistar",
+            "Tahm Kench"
+        ]
+    },
+    {
+        "name": "Thor",
+        "picks": [
+            "Fiddlesticks",
+            "Kayle",
+            "Thresh"
+        ]
+    },
+    {
+        "name": "Charlie",
+        "picks": [
+            "Ashe",
+            "Bard",
+            "Sona"
+        ]
     }
+
 ]

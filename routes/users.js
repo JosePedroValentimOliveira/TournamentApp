@@ -3,12 +3,15 @@ const express = require("express");
 const router = express.Router();
 const bcrypt = require('bcryptjs');
 const passport = require('passport');
+const { ensureAuthenticated } = require('../config/auth');
 
 
 //user model
-const Admin = require('../models/Admin');
+const User = require('../models/User');
 
-
+router.get('/dashboard',ensureAuthenticated, (req,res)=>{
+    res.render('dashboard');
+})
 
 router.get('/login', (req, res) => {
     res.render('login')
@@ -40,12 +43,12 @@ router.post('/register', (req, res) => {
 
         
 
-        Admin.findOne({username:username}).then((user)=>{
+        User.findOne({username:username}).then((user)=>{
             if(user){
                 usernamebool = true;
             }
         })
-        Admin.findOne({ email: email})
+        User.findOne({ email: email})
             .then((user) => {
 
                 if(usernamebool){
@@ -61,7 +64,7 @@ router.post('/register', (req, res) => {
                     })
                 }
                 else {
-                    const newUser = new Admin({
+                    const newUser = new User({
                         name,username, email, password
                     });
 

@@ -5,13 +5,13 @@ const bcrypt = require('bcryptjs');
 
 //Load User Model
 
-const Admin = require('../models/Admin');
+const User = require('../models/User');
 
 module.exports = (passport)=>{
     passport.use(new LocalStrategy({
         usernameField:'email'
     },(email,password,done)=>{
-        Admin.findOne({email:email}).then(user=>{
+        User.findOne({email:email}).then(user=>{
 
             //Match User
             if(!user){
@@ -36,7 +36,7 @@ module.exports = (passport)=>{
         done(null,user.id);
     });
     passport.deserializeUser(function(id,done){
-        Admin.findById(id,function(err,user){
+        User.findById(id,function(err,user){
             done(err,user);
         });
     });
