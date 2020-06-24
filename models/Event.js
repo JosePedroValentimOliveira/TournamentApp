@@ -10,7 +10,8 @@ const EventSchema = mongoose.Schema({
     fee:{type:Number,required:true},
     maxPlayers:{type:Number,required:false},
     startDate:{type:Date,required:false},
-    organiser:{type:String,required:true}
+    organiser:{type:String,required:true},
+    eventCode:{type:String,required:true}
 });
 
 const Event = mongoose.model('Event',EventSchema,'Events');

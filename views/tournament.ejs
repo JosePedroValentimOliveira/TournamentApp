@@ -8,42 +8,55 @@
 
 
 <%-contentFor('body')%>
+<div class="row mt-5">
+  <div class="col-md-6 m-auto">
+    <div class="card card-body">
+      <form action="/tournament/newEvent" method="post">
+        <h3>Basic Info</h3>
+        <div class="form-group">
+          <label for="name">Tournament Name</label>
+          <input type="text" name="name" id="name" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="description">Description</label>
+          <input type="text" name="description" id="description" class="form-control">
+        </div>
+        <h3>Game Info</h3>
+        <div class="form-group">
+          <label for="game">Game</label>
+          <input type="text" name="game" id="game" class="form-control" required>
+        </div>
+        
+        <div class="form-group">
+          <input type="radio" name="type" id="single" value="single" checked>
+          <label for="single">Single stage tournament</label>
 
-<form action="" method="post" >
-  <h3>Basic Info</h3>
-  <label for="name">Tournament Name</label>
-  <input type="text" name="name" id="name" required>
-
-  <label for="description">Description</label>
-  <input type="text" name="description" id="description" >
-  
-  <h1>Game Info</h1>
-  <label for="game">Game</label>
-  <input type="text" name="game" id="game" required>
-
-  
-  <input type="radio" name="type" id="single" checked>
-  <label for="single">Single stage tournament</label>
-  
-  <input type="radio" name="type" id="double">
-  <label for="double">Two Stage Tournament</label>
-<label for="format">Format</label>
-<select name="format" id="format">
-  <option value="singleElem">Single Elemination</option>
-  <option value="doubleElem">Double Elemination</option>
-  <option value="swiss">Swiss</option>
-  <option value="roundRobin">Round Robin</option>
-</select>
+          <input type="radio" name="type" id="double" value="double">
+          <label for="double">Two Stage Tournament</label></div>
+        <div class="form-group">
+          <label for="format">Format</label>
+          <select name="format" id="format">
+            <option value="singleElem">Single Elemination</option>
+            <option value="doubleElem">Double Elemination</option>
+            <option value="swiss">Swiss</option>
+            <option value="roundRobin">Round Robin</option>
+          </select>
+        </div>
 
 
 
+        <h3>Registration</h3>
+        <div class="form-group">
+          <label for="maxPlayers">Maximum players</label>
+          <input type="text" name="maxPlayers" id="maxPlayers" class="form-control" style="width: 7%;"></div>
+        <div class="form-group">
+          <label for="startDate">Start date</label>
+          <input type="date" name="startDate" id="startDate" class="form-control "></div>
+        <button type="submit" class="btn btn-primary btn-block">Save Tournament</button>
 
-  <h3>Registration</h3>
-  <label for="maxPlayers">Maximum players</label>
-  <input type="text" name="maxPlayers" id="maxPlayers">
-  <label for="startDate"></label>
-  <input type="date" name="startDate" id="startDate">
-  <button type="submit">Save Tournament</button>
-</form>
+      </form>
+    </div>
+  </div>
+</div>
 
 <%-contentFor('meta')%>
