@@ -1,0 +1,14 @@
+.image-container{
+    width: 15%;
+    margin:0.5rem;
+    border: 1px black solid;
+    position: relative;
+}
+.plus-image{
+    position:absolute ;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    content: url(https://img.icons8.com/pastel-glyph/64/000000/plus.png);
+}
