@@ -1,31 +1,27 @@
 <%-contentFor('title')%>
 <title>Dashboard</title>
 <%-contentFor('css')%>
-<link rel="stylesheet" href="../css/dashboard.css">
+
 
 <%-contentFor('script')%>
-<script>
+<script> let events = <%-events-%>;
 
-    let buttons = document.querySelectorAll(".image-container");
-    buttons.forEach(button =>{
-        button.addEventListener("click",()=>{location.href = "/tournament/new"})
-    })
+
+let div = document.getElementById("events");
+events.forEach(event => {
+    let p = document.createElement("p");
+    p.textContent = event.name;
+    div.appendChild(p);
+}); 
 
 </script>
 
 
+
 <%-contentFor('body')%>
-<div id="tournamentsAddContainer" style="display:flex; width: 100%; height: 20rem; justify-content: center;">
-    <div class="image-container">
-        <img class="plus-image"/>
-    </div>
-    <div class="image-container">
-        <img class="plus-image"/>
-    </div>
-    <div class="image-container">
-        <img class="plus-image"/>
-    </div>
-    
+<button onclick="location.href = '/tournament/new'">New tournament</button>
+<button onclick="location.href = '/logout'">Logout</button>
+<div id="events">
 
 </div>
 <%-contentFor('meta')%>

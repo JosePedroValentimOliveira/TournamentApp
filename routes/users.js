@@ -6,14 +6,24 @@ const passport = require('passport');
 const { ensureAuthenticated } = require('../config/auth');
 
 
+
+
 //user model
 const User = require('../models/User');
+const Event = require('../models/Event');
+const username = "Zéca";
 
-router.get('/dashboard',ensureAuthenticated, (req,res)=>{
-    res.render('dashboard');
-})
+router.get('/dashboard',ensureAuthenticated, async (req,res)=>{
+    Event.find({organiser:username},(err,list)=>{
+        res.render('dashboard',{events:JSON.stringify(list)});
+    })});
 
-router.get('/login', (req, res) => {
+
+
+
+
+router.get('/login', async(req, res) => {
+   
     res.render('login')
 })
 router.get('/register', (req, res) => res.render('register'));
@@ -41,7 +51,7 @@ router.post('/register', (req, res) => {
     })
     else {
 
-        
+
 
         User.findOne({username:username}).then((user)=>{
             if(user){

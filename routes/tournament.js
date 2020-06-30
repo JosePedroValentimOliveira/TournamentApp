@@ -36,7 +36,7 @@ router.post('/newEvent', ensureAuthenticated, async (req, res) => {
 
             console.log(`${eventCode} not found - Add new event`);
 
-            const link = `${req.get('host')}/${username}/${eventCode}`;
+            const link = `${req.get('host')}/${eventCode}`;
             const newEvent = new Event({
                 name, description, game, type, format, signupLink: link, fee: 0, maxPlayers, startDate, organiser: username, eventCode
             })
