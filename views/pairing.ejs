@@ -2,9 +2,14 @@
 <title>Pairings</title>
 <%-contentFor('css')%>
 
-
+<style>
+    td,th{padding :0.5rem;
+    border: 1px solid #999999;}
+    .playerName{font-weight: bold;}
+    *{color: black;}
+</style>
 <%-contentFor('script')%>
-<script>let players = <%-players-%>;</script>
+
 <script src="../js/pairings.js"></script>
 
 
@@ -12,6 +17,23 @@
 <%-contentFor('body')%>
 <div id="pairings"></div>
 
+<form id="week">
+    <input type="text" id="weekNr">
+    <button type="submit">Generate</button>
+
+</form>
+
+<table id="picks" >
+    <thead>
+    <th>Player</th>
+    <th>Pick #1</th>
+    <th>Pick #2</th>
+    <th>Pick #3</th>
+    </thead>
+    <tbody>
+        
+    </tbody>
+</table>
+
 
 <%-contentFor('meta')%>
-

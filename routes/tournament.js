@@ -3,11 +3,12 @@ const router = express.Router();
 const { ensureAuthenticated } = require('../config/auth');
 const Event = require('../models/Event');
 
- function searchCode(code) {
+
+
+ async function  searchCode(code) {
     return  Event.find({ eventCode: code }).then((event)=>{return event;});
     
 }
-
 
 
 
@@ -22,6 +23,7 @@ router.post('/newEvent', ensureAuthenticated, async (req, res) => {
     const username = req.user.username;
 
     let eventCode = Math.random().toString(36).substr(2, 8);
+
 
     
     let length = 1;
@@ -41,6 +43,7 @@ router.post('/newEvent', ensureAuthenticated, async (req, res) => {
                 name, description, game, type, format, signupLink: link, fee: 0, maxPlayers, startDate, organiser: username, eventCode
             })
 
+          
 
             newEvent.save()
                 .then(event => {

@@ -49,9 +49,13 @@ app.use((req,res,next)=>{
 app.use('/',require('./routes/users'));
 app.use('/',require('./routes/signupLinks'));
 app.use('/tournament',require('./routes/tournament'));
+app.get('/display-picks',(req,res)=>{
+    res.render('pairing');
+});
 app.get('/',(req,res)=>{
     res.render('index');
 });
+
 
 
 

@@ -2,84 +2,211 @@
     {
         "name": "Hamza",
         "picks": [
-            "Zyra",
-            "Pyke",
-            "Taliyah"
+            [
+                "Zyra",
+                "Pyke",
+                "Taliyah"
+            ],
+            [
+                "Poppy",
+                "Aatrox",
+                "Darius"
+            ],
+            [],
+            [],
+            [],
+            []
         ]
     },
     {
         "name": "John",
         "picks": [
-            "Tahm Kench",
-            "Syndra",
-            "Anivia"
+            [
+                "Tahm Kench",
+                "Syndra",
+                "Anivia"
+            ],
+            [
+                "Urgot",
+                "Galio",
+                "Gnar"
+            ],
+            [],
+            [],
+            [],
+            []
         ]
     },
     {
         "name": "Zeca",
         "picks": [
-            "Neeko",
-            "Syndra",
-            "Bard"
+            [
+                "Neeko",
+                "Syndra",
+                "Bard"
+            ],
+            [
+                "Hecarim",
+                "Wukong",
+                "Braum"
+            ],
+            [],
+            [],
+            [],
+            []
         ]
-    }
-    ,
+    },
     {
         "name": "Emily",
         "picks": [
-            "Lux",
-            "Karma",
-            "Ashe"
+           [
+                    "Lux",
+                    "Karma",
+                    "Ashe"
+                ]
+            ,
+            [
+                    "Leona",
+                    "Warwick",
+                    "Amumu"
+                ]
+                ,
+                [],
+                [],
+                [],
+                []
         ]
-    }
-    ,
+    },
     {
         "name": "Chris",
         "picks": [
-            "Zyra",
-            "Karma",
-            "Morgana"
+            [
+                    "Zyra",
+                    "Karma",
+                    "Morgana"
+                ]
+            ,
+            [
+                    "Illaoi",
+                    "Malphite",
+                    "Cho'gath"
+                ]
+                ,
+                [],
+                [],
+                [],
+                []
         ]
     },
     {
         "name": "Tanya",
         "picks": [
-            "Ashe",
-            "Lulu",
-            "Senna"
+            [
+                    "Ashe",
+                    "Lulu",
+                    "Senna"
+                ]
+            ,
+            [
+                    "Cho'gath",
+                    "Nasus",
+                    "Sejuani"
+                ]
+                ,
+                [],
+                [],
+                [],
+                []
         ]
     },
     {
         "name": "Kenny",
         "picks": [
-            "Zilean",
-            "Anivia",
-            "Orianna"
+            [
+                    "Zilean",
+                    "Anivia",
+                    "Orianna"
+                ]
+            ,
+            [
+                    "Darius",
+                    "Illaoi",
+                    "Udyr"
+                ]
+                ,
+                [],
+                [],
+                [],
+                []
         ]
     },
     {
         "name": "Connor",
         "picks": [
-            "Zyra",
-            "Alistar",
-            "Tahm Kench"
+            [
+                    "Zyra",
+                    "Alistar",
+                    "Tahm Kench"
+                ]
+            ,
+            [
+                    "Nautilus",
+                    "Kled",
+                    "Maokai"
+                ]
+                ,
+                [],
+                [],
+                [],
+                []
         ]
     },
     {
         "name": "Thor",
         "picks": [
-            "Fiddlesticks",
-            "Kayle",
-            "Thresh"
+            [
+                    "Fiddlesticks",
+                    "Kayle",
+                    "Thresh"
+                ]
+            ,
+           [
+                    "Garen",
+                    "Ornn",
+                    "Shyvana"
+                ]
+                ,
+                [],
+                [],
+                [],
+                []
         ]
     },
     {
         "name": "Charlie",
         "picks": [
-            "Ashe",
-            "Bard",
-            "Sona"
+            {
+                "week1": [
+                    "Ashe",
+                    "Bard",
+                    "Sona"
+                ]
+            },
+            {
+                "week2": []
+            },
+            {
+                "week3": []
+            },
+            {
+                "week4": []
+            },
+            {
+                "week5": []
+            },
+            {
+                "week6": []
+            }
         ]
     }
-
 ]
