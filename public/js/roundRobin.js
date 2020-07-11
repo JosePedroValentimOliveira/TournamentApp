@@ -18,6 +18,7 @@ resultButton.addEventListener('click', () => {
     let resultaten = document.querySelectorAll("#radioResult div input:checked");
     let counter = 0;
     let fileData = [];
+    fileData.push({"round":roundForm[0].value});
     for (let index = 0; index < allResults.length; index+=2) {
 
         fileData.push({"player1":allResults[index].textContent,"player2":allResults[index+1].textContent,"result":resultaten[counter].value})
