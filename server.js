@@ -66,6 +66,7 @@ app.get('/',(req,res)=>{
 app.post('/write-file',(req,res)=>{
     const data = req.body;
     let fileData= "";
+    fileData += `${element.round}\n`;
     data.forEach(element => {
        fileData+= `${element.player1} vs ${element.player2} : [${element.result}]\n`
     });
