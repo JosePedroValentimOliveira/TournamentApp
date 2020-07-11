@@ -3,37 +3,82 @@
 <%-contentFor('css')%>
 
 <style>
-    td,th{padding :0.5rem;
-    border: 1px solid #999999;}
-    .playerName{font-weight: bold;}
-    *{color: black;}
+    *,
+    h2 {
+        color: black;
+    }
+
+    td,
+    th {
+        padding: 0.5rem;
+        border: 1px solid #999999;
+    }
+
+    .playerName {
+        font-weight: bold;
+    }
+
+
+    body {
+        display: grid;
+        grid-template-areas: "picks pairings";
+        width: 100%;
+        text-align: center;
+    }
+
+    #pairings {
+        grid-area: pairings;
+    }
+
+    #players {
+        grid-area: picks;
+    }
+    
 </style>
 <%-contentFor('script')%>
+<script> let players = <%-players-%>;
 
+</script>
 <script src="../js/pairings.js"></script>
-
+<script src="../js/roundRobin.js"></script>
 
 
 <%-contentFor('body')%>
-<div id="pairings"></div>
 
-<form id="week">
-    <input type="text" id="weekNr">
-    <button type="submit">Generate</button>
+<div id="pairings">
+    <form id="round">
+        <input type="text" id="roundNr">
+        <button type="submit">Generate Round</button>
 
-</form>
+    </form>
 
-<table id="picks" >
-    <thead>
-    <th>Player</th>
-    <th>Pick #1</th>
-    <th>Pick #2</th>
-    <th>Pick #3</th>
-    </thead>
-    <tbody>
-        
-    </tbody>
-</table>
+    <div id="rounds"></div>
 
+    <div id="results">
+        <form action="" id="radioResult">
+            
+        </form>
+        <button id="writeToFile">Save Results</button>
+    </div>
+</div>
+<div id="players">
+    <form id="week">
+        <input type="text" id="weekNr">
+        <button type="submit">Generate</button>
+
+    </form>
+
+    <table id="picks">
+        <thead>
+            <th>Player</th>
+            <th>Pick #1</th>
+            <th>Pick #2</th>
+            <th>Pick #3</th>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</div>
 
 <%-contentFor('meta')%>

@@ -12,7 +12,7 @@
                 "Aatrox",
                 "Darius"
             ],
-            [],
+            ["Jhin","Ziggs","Viktor"],
             [],
             [],
             []
@@ -31,7 +31,7 @@
                 "Galio",
                 "Gnar"
             ],
-            [],
+            ["Galio","Sylas","Annie"],
             [],
             [],
             []
@@ -50,33 +50,12 @@
                 "Wukong",
                 "Braum"
             ],
-            [],
+            ["Ezreal","Nidalee","Orianna"],
             [],
             [],
             []
         ]
-    },
-    {
-        "name": "Emily",
-        "picks": [
-           [
-                    "Lux",
-                    "Karma",
-                    "Ashe"
-                ]
-            ,
-            [
-                    "Leona",
-                    "Warwick",
-                    "Amumu"
-                ]
-                ,
-                [],
-                [],
-                [],
-                []
-        ]
-    },
+    },      
     {
         "name": "Chris",
         "picks": [
@@ -92,7 +71,7 @@
                     "Cho'gath"
                 ]
                 ,
-                [],
+                ["Karthus","Heimer","Veigar"],
                 [],
                 [],
                 []
@@ -113,7 +92,7 @@
                     "Sejuani"
                 ]
                 ,
-                [],
+                ["Lux","Velkoz","Veigar"],
                 [],
                 [],
                 []
@@ -134,7 +113,7 @@
                     "Udyr"
                 ]
                 ,
-                [],
+                ["Zoe","Ahri","Annie"],
                 [],
                 [],
                 []
@@ -155,7 +134,7 @@
                     "Maokai"
                 ]
                 ,
-                [],
+                ["Lissandra","Gragas","Nunu & Willump"],
                 [],
                 [],
                 []
@@ -176,37 +155,10 @@
                     "Shyvana"
                 ]
                 ,
-                [],
+                ["Xerath","Viktor","Azir"],
                 [],
                 [],
                 []
-        ]
-    },
-    {
-        "name": "Charlie",
-        "picks": [
-            {
-                "week1": [
-                    "Ashe",
-                    "Bard",
-                    "Sona"
-                ]
-            },
-            {
-                "week2": []
-            },
-            {
-                "week3": []
-            },
-            {
-                "week4": []
-            },
-            {
-                "week5": []
-            },
-            {
-                "week6": []
-            }
         ]
     }
 ]

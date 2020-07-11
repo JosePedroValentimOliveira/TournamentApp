@@ -4,6 +4,8 @@ const expressLayouts = require('express-ejs-layouts');
 const flash = require('connect-flash');
 const session = require('express-session');
 const passport = require('passport');
+const Player = require('./models/Player');
+const fs = require('fs');
 
 require('./config/db')
 require('./config/passport')(passport);
@@ -50,11 +52,30 @@ app.use('/',require('./routes/users'));
 app.use('/',require('./routes/signupLinks'));
 app.use('/tournament',require('./routes/tournament'));
 app.get('/display-picks',(req,res)=>{
-    res.render('pairing');
+    Player.find({game:"LeagueofLegends"}).then((players)=>{
+       
+        res.render('pairing',{players:JSON.stringify(players)});
+    }).catch();
+    
 });
 app.get('/',(req,res)=>{
     res.render('index');
 });
+
+
+app.post('/write-file',(req,res)=>{
+    const data = req.body;
+    let fileData= "";
+    data.forEach(element => {
+       fileData+= `${element.player1} vs ${element.player2} : [${element.result}]\n`
+    });
+    
+    
+
+    fs.appendFileSync('results.txt',fileData);
+
+})
+
 
 
 

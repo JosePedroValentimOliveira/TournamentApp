@@ -1,7 +1,6 @@
 
-let form = document.querySelector('form');
+let form = document.getElementById('week');
 let table = document.querySelector('tbody');
-console.log(table);
 
 form.addEventListener('submit',async (e)=>{
     
