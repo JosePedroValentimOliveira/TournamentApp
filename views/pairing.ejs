@@ -38,6 +38,12 @@
 <%-contentFor('script')%>
 <script> let players = <%-players-%>;
 
+let download = document.getElementById('download');
+
+download.addEventListener('click',()=>{
+
+    location.href = "/download/";
+})
 </script>
 <script src="../js/pairings.js"></script>
 <script src="../js/roundRobin.js"></script>
@@ -80,5 +86,7 @@
         </tbody>
     </table>
 </div>
+
+<button id="download">Download File</button>
 
 <%-contentFor('meta')%>

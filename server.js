@@ -76,6 +76,10 @@ app.post('/write-file',(req,res)=>{
 
 })
 
+app.get('/download/',(req,res)=>{
+    res.download("./results.txt");
+})
+
 
 
 
