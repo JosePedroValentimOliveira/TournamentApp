@@ -9,9 +9,21 @@
 
 let div = document.getElementById("events");
 events.forEach(event => {
-    let p = document.createElement("p");
-    p.textContent = event.name;
-    div.appendChild(p);
+   
+    let eventPageLink = document.createElement("a");
+   
+    let signupLink = document.createElement("a");
+
+    eventPageLink.href = `${event.signupLink}`;
+    eventPageLink.textContent = "EventPage";
+    
+
+    signupLink.href = `/signup/${event.eventCode}`;
+    signupLink.textContent = "SignupPage";
+    
+    
+    div.appendChild(eventPageLink);
+    div.appendChild(signupLink);
 }); 
 
 </script>
