@@ -13,7 +13,7 @@
                 "Darius"
             ],
             ["Jhin","Ziggs","Viktor"],
-            [],
+            ["Xin Zhao","Fizz","Lee Sin"],
             [],
             []
         ]
@@ -32,7 +32,7 @@
                 "Gnar"
             ],
             ["Galio","Sylas","Annie"],
-            [],
+            ["Shyvana","Fiora","Illaoi"],
             [],
             []
         ]
@@ -51,7 +51,7 @@
                 "Braum"
             ],
             ["Ezreal","Nidalee","Orianna"],
-            [],
+            ["Irelia","Darius","Rumble"],
             [],
             []
         ]
@@ -72,7 +72,7 @@
                 ]
                 ,
                 ["Karthus","Heimer","Veigar"],
-                [],
+                ["Swain","Ryze","Dr. Mundo"],
                 [],
                 []
         ]
@@ -93,7 +93,7 @@
                 ]
                 ,
                 ["Lux","Velkoz","Veigar"],
-                [],
+                ["Lillia","Gnar","Sejuani"],
                 [],
                 []
         ]
@@ -114,7 +114,7 @@
                 ]
                 ,
                 ["Zoe","Ahri","Annie"],
-                [],
+                ["Master Yi","Morderkaiser","Wukong"],
                 [],
                 []
         ]
@@ -135,7 +135,7 @@
                 ]
                 ,
                 ["Lissandra","Gragas","Nunu & Willump"],
-                [],
+                ["Olaf","Sett","Udyr"],
                 [],
                 []
         ]
@@ -156,7 +156,7 @@
                 ]
                 ,
                 ["Xerath","Viktor","Azir"],
-                [],
+                ["Dr. Mundo","Volibear","Warwick"],
                 [],
                 []
         ]

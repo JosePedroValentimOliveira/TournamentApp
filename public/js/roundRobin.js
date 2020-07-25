@@ -13,32 +13,7 @@ roundForm.addEventListener('submit', (e) => {
 
 })
 
-resultButton.addEventListener('click', () => {
-    let allResults = document.querySelectorAll("#radioResult div label:nth-of-type(odd)");
-    let resultaten = document.querySelectorAll("#radioResult div input:checked");
-    let counter = 0;
-    let fileData = [];
-    fileData.push({"round":roundForm[0].value});
-    for (let index = 0; index < allResults.length; index+=2) {
 
-        fileData.push({"player1":allResults[index].textContent,"player2":allResults[index+1].textContent,"result":resultaten[counter].value})
-        counter++;
-    }
-
-    
-    
-
-    const options = {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(fileData)
-    }
-
-    fetch('/write-file', options);
-
-})
 
 
 let rooms = ["Colosseo", "El Jem", "Aventicum", "Cagliari", "Leptis Magna", "Caerleon"];

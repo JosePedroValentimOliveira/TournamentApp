@@ -1,0 +1,42 @@
+ROUND 1
+
+Solescoutt EUW vs DuckerZ #EUW : [DuckerZ #EUW]
+MrTBB #EUW vs LemmeSm4sh #EUW : [LemmeSm4sh #EUW]
+FlameMeDaddy OwO  #EUW vs Silverräven #EUW : [tie]
+TrueHeavenlyBear #EUW vs Zéca #EUW : [Zéca #EUW]
+
+ROUND 2
+Solescoutt EUW vs MrTBB #EUW : [tie]
+FlameMeDaddy OwO  #EUW vs DuckerZ #EUW : [DuckerZ #EUW]
+TrueHeavenlyBear #EUW vs LemmeSm4sh #EUW : [TrueHeavenlyBear #EUW]
+Zéca #EUW vs Silverräven #EUW : [Silverräven #EUW]
+
+ROUND 3
+Solescoutt EUW vs FlameMeDaddy OwO  #EUW : [tie]
+TrueHeavenlyBear #EUW vs MrTBB #EUW : [TrueHeavenlyBear #EUW]
+Zéca #EUW vs DuckerZ #EUW : [DuckerZ #EUW]
+Silverräven #EUW vs LemmeSm4sh #EUW : [LemmeSm4sh #EUW]
+
+ROUND 4
+Solescoutt EUW vs TrueHeavenlyBear #EUW : [tie]
+Zéca #EUW vs FlameMeDaddy OwO  #EUW : [Zéca #EUW]
+Silverräven #EUW vs MrTBB #EUW : [MrTBB #EUW]
+LemmeSm4sh #EUW vs DuckerZ #EUW : [tie]
+
+ROUND 5
+Solescoutt EUW vs Zéca #EUW : [Zéca #EUW]
+Silverräven #EUW vs TrueHeavenlyBear #EUW : [TrueHeavenlyBear #EUW]
+LemmeSm4sh #EUW vs FlameMeDaddy OwO  #EUW : [LemmeSm4sh #EUW]
+DuckerZ #EUW vs MrTBB #EUW : [DuckerZ #EUW]
+
+ROUND 6
+Solescoutt EUW vs Silverräven #EUW : [Solescoutt EUW]
+LemmeSm4sh #EUW vs Zéca #EUW : [tie]
+DuckerZ #EUW vs TrueHeavenlyBear #EUW : [DuckerZ #EUW]
+MrTBB #EUW vs FlameMeDaddy OwO  #EUW : [MrTBB #EUW]
+
+ROUND 7
+Solescoutt EUW vs LemmeSm4sh #EUW : [Solescoutt EUW]
+DuckerZ #EUW vs Silverräven #EUW : [DuckerZ #EUW]
+MrTBB #EUW vs Zéca #EUW : [MrTBB #EUW]
+FlameMeDaddy OwO  #EUW vs TrueHeavenlyBear #EUW : [TrueHeavenlyBear #EUW]
